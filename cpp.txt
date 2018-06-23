@@ -1,0 +1,35 @@
+From:   Per Abrahamsen
+To:     All
+Subj:   cpp.el --- Highlight or hide text according to cpp conditionals.
+Attr:   
+GNU.EMACS.SOURCES              -------------------------------
+From: abraham@research.att.com (Per Abrahamsen)
+
+Parse a text for C preprocessor conditionals, and highlight or hide
+the text inside the conditionals as you command.  
+
+Other features: 
+
+- Optionally hide the cpp preprocessor statements. 
+  This is useful when you have highlighted the text.
+
+- Mark one branch of a conditional as read only, if desired.
+  I.e. "Don't touch the OS/2 code."
+
+- Cool mode for specifying how to display the conditionals. 
+  Install the code just to see this, even if you don't care about cpp!
+
+Think of it as the 90'ties version of `hideif.el'.  The main
+difference is that cpp.el uses BRIGHT SPARKLING COLORS (when
+available) and will gladly show both part of a conditional in
+different colors.  On the other hand `hideif.el' will parse `#if'
+expressions which is less useful with `cpp.el'.
+
+Requires GNU Emacs 19 from FSF.  Works best with a color monitor.
+Degenerates into `hideif.el' when used on a TTY, except that it
+doesn't suddenly learn how to parse `#if' expressions.
+
+I fixed the last bug (ha ha) about an hour ago, so this is very much
+alpha quality code.
+
+
